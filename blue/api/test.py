@@ -1,0 +1,9 @@
+try:
+    x=2
+    print("except",x/0)
+    try:
+        print(x/0)
+    except:
+        print("e")    
+except:
+    print("p")    

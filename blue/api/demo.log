@@ -1,0 +1,126 @@
+2020-09-05 12:06:37,295 DEBUG botocore.hooks MainThread : Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2020-09-05 12:06:37,310 DEBUG botocore.hooks MainThread : Changing event name from before-call.apigateway to before-call.api-gateway
+2020-09-05 12:06:37,326 DEBUG botocore.hooks MainThread : Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2020-09-05 12:06:37,342 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2020-09-05 12:06:37,342 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2020-09-05 12:06:37,342 DEBUG botocore.hooks MainThread : Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2020-09-05 12:06:37,357 DEBUG botocore.hooks MainThread : Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2020-09-05 12:06:37,373 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2020-09-05 12:06:37,373 DEBUG botocore.hooks MainThread : Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2020-09-05 12:06:37,373 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2020-09-05 12:06:37,373 DEBUG botocore.hooks MainThread : Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2020-09-05 12:06:37,607 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\endpoints.json
+2020-09-05 12:06:37,661 DEBUG botocore.hooks MainThread : Event choose-service-name: calling handler <function handle_service_name_alias at 0x0000026C7B257840>
+2020-09-05 12:06:46,491 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2020-09-05 12:06:46,538 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x0000026C7B2028C8>
+2020-09-05 12:06:46,538 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x0000026C79C8C1E0>
+2020-09-05 12:06:49,072 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x0000026C7B2026A8>
+2020-09-05 12:06:49,088 DEBUG botocore.regions MainThread : Creating a regex based endpoint for s3, sfo2
+2020-09-05 12:06:49,088 DEBUG botocore.endpoint MainThread : Setting s3 timeout as (60, 60)
+2020-09-05 12:06:49,821 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\_retry.json
+2020-09-05 12:06:49,821 DEBUG botocore.client MainThread : Registering retry handlers for service: s3
+2020-09-05 12:06:49,821 DEBUG s3transfer.utils MainThread : Acquiring 0
+2020-09-05 12:06:49,821 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000026C19E56240>}) about to wait for the following futures []
+2020-09-05 12:06:49,821 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000026C19E56240>}) done waiting for dependent futures
+2020-09-05 12:06:49,821 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000026C19E56240>}) with kwargs {'client': <botocore.client.S3 object at 0x0000026C19A9F908>, 'config': <boto3.s3.transfer.TransferConfig object at 0x0000026C19B79B70>, 'osutil': <s3transfer.utils.OSUtils object at 0x0000026C19B79BA8>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x0000026C19B79D68>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x0000026C19E56240>}
+2020-09-05 12:06:49,821 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : Exception raised.
+Traceback (most recent call last):
+  File "C:\Users\Sundus\Anaconda3\lib\site-packages\s3transfer\tasks.py", line 255, in _main
+    self._submit(transfer_future=transfer_future, **kwargs)
+  File "C:\Users\Sundus\Anaconda3\lib\site-packages\s3transfer\upload.py", line 549, in _submit
+    upload_input_manager.provide_transfer_size(transfer_future)
+  File "C:\Users\Sundus\Anaconda3\lib\site-packages\s3transfer\upload.py", line 237, in provide_transfer_size
+    transfer_future.meta.call_args.fileobj))
+  File "C:\Users\Sundus\Anaconda3\lib\site-packages\s3transfer\utils.py", line 245, in get_file_size
+    return os.path.getsize(filename)
+  File "C:\Users\Sundus\Anaconda3\lib\genericpath.py", line 50, in getsize
+    return os.stat(filename).st_size
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'temp/file.jpg'
+2020-09-05 12:06:50,042 DEBUG s3transfer.utils ThreadPoolExecutor-1_0 : Releasing acquire 0/None
+2020-09-05 12:09:15,107 DEBUG botocore.hooks MainThread : Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+2020-09-05 12:09:15,107 DEBUG botocore.hooks MainThread : Changing event name from before-call.apigateway to before-call.api-gateway
+2020-09-05 12:09:15,107 DEBUG botocore.hooks MainThread : Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+2020-09-05 12:09:15,122 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+2020-09-05 12:09:15,122 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+2020-09-05 12:09:15,122 DEBUG botocore.hooks MainThread : Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+2020-09-05 12:09:15,138 DEBUG botocore.hooks MainThread : Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+2020-09-05 12:09:15,154 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+2020-09-05 12:09:15,154 DEBUG botocore.hooks MainThread : Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+2020-09-05 12:09:15,154 DEBUG botocore.hooks MainThread : Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+2020-09-05 12:09:15,154 DEBUG botocore.hooks MainThread : Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+2020-09-05 12:09:15,216 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\endpoints.json
+2020-09-05 12:09:15,263 DEBUG botocore.hooks MainThread : Event choose-service-name: calling handler <function handle_service_name_alias at 0x00000195ACC47840>
+2020-09-05 12:09:15,451 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\s3\2006-03-01\service-2.json
+2020-09-05 12:09:15,512 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x00000195ACBF28C8>
+2020-09-05 12:09:15,512 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x00000195AB65C1E0>
+2020-09-05 12:09:15,763 DEBUG botocore.hooks MainThread : Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x00000195ACBF26A8>
+2020-09-05 12:09:15,763 DEBUG botocore.regions MainThread : Creating a regex based endpoint for s3, sfo2
+2020-09-05 12:09:15,779 DEBUG botocore.endpoint MainThread : Setting s3 timeout as (60, 60)
+2020-09-05 12:09:15,779 DEBUG botocore.loaders MainThread : Loading JSON file: C:\Users\Sundus\Anaconda3\lib\site-packages\botocore\data\_retry.json
+2020-09-05 12:09:15,779 DEBUG botocore.client MainThread : Registering retry handlers for service: s3
+2020-09-05 12:09:15,779 DEBUG s3transfer.utils MainThread : Acquiring 0
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000195CB5B52B0>}) about to wait for the following futures []
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000195CB5B52B0>}) done waiting for dependent futures
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-1_0 : Executing task UploadSubmissionTask(transfer_id=0, {'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000195CB5B52B0>}) with kwargs {'client': <botocore.client.S3 object at 0x00000195CB1FF940>, 'config': <boto3.s3.transfer.TransferConfig object at 0x00000195CB2D9BE0>, 'osutil': <s3transfer.utils.OSUtils object at 0x00000195CB2D9C18>, 'request_executor': <s3transfer.futures.BoundedExecutor object at 0x00000195CB2D9DD8>, 'transfer_future': <s3transfer.futures.TransferFuture object at 0x00000195CB5B52B0>}
+2020-09-05 12:09:15,795 DEBUG s3transfer.futures ThreadPoolExecutor-1_0 : Submitting task PutObjectTask(transfer_id=0, {'bucket': 'pmpai', 'key': 'Leonberger/file.jpg', 'extra_args': {}}) to executor <s3transfer.futures.BoundedExecutor object at 0x00000195CB2D9DD8> for transfer request: 0.
+2020-09-05 12:09:15,795 DEBUG s3transfer.utils ThreadPoolExecutor-1_0 : Acquiring 0
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-0_0 : PutObjectTask(transfer_id=0, {'bucket': 'pmpai', 'key': 'Leonberger/file.jpg', 'extra_args': {}}) about to wait for the following futures []
+2020-09-05 12:09:15,795 DEBUG s3transfer.utils ThreadPoolExecutor-1_0 : Releasing acquire 0/None
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-0_0 : PutObjectTask(transfer_id=0, {'bucket': 'pmpai', 'key': 'Leonberger/file.jpg', 'extra_args': {}}) done waiting for dependent futures
+2020-09-05 12:09:15,795 DEBUG s3transfer.tasks ThreadPoolExecutor-0_0 : Executing task PutObjectTask(transfer_id=0, {'bucket': 'pmpai', 'key': 'Leonberger/file.jpg', 'extra_args': {}}) with kwargs {'client': <botocore.client.S3 object at 0x00000195CB1FF940>, 'fileobj': <s3transfer.utils.ReadFileChunk object at 0x00000195CB5B5550>, 'bucket': 'pmpai', 'key': 'Leonberger/file.jpg', 'extra_args': {}}
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <function validate_ascii_metadata at 0x00000195ACC706A8>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <function sse_md5 at 0x00000195ACC6BAE8>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <function convert_body_to_file_like_object at 0x00000195ACC70F28>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <function validate_bucket_name at 0x00000195ACC6BA60>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_cache of <botocore.utils.S3RegionRedirector object at 0x00000195CB2D94A8>>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <bound method S3ArnParamHandler.handle_arn of <botocore.utils.S3ArnParamHandler object at 0x00000195CB2D9B00>>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-parameter-build.s3.PutObject: calling handler <function generate_idempotent_uuid at 0x00000195ACC6B8C8>
+2020-09-05 12:09:15,810 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-call.s3.PutObject: calling handler <function conditionally_calculate_md5 at 0x00000195ACAE1400>
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-call.s3.PutObject: calling handler <function add_expect_header at 0x00000195ACC6BD90>
+2020-09-05 12:09:15,873 DEBUG botocore.handlers ThreadPoolExecutor-0_0 : Adding expect 100 continue header to request.
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-call.s3.PutObject: calling handler <bound method S3RegionRedirector.set_request_url of <botocore.utils.S3RegionRedirector object at 0x00000195CB2D94A8>>
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-call.s3.PutObject: calling handler <function inject_api_version_header_if_needed at 0x00000195ACC710D0>
+2020-09-05 12:09:15,873 DEBUG botocore.endpoint ThreadPoolExecutor-0_0 : Making request for OperationModel(name=PutObject) with params: {'url_path': '/pmpai/Leonberger/file.jpg', 'query_string': {}, 'method': 'PUT', 'headers': {'User-Agent': 'Boto3/1.14.54 Python/3.7.3 Windows/10 Botocore/1.17.54', 'Content-MD5': '60i3OksfyQyL307rICVE0Q==', 'Expect': '100-continue'}, 'body': <s3transfer.utils.ReadFileChunk object at 0x00000195CB5B5550>, 'url': 'https://pmpai.sfo2.digitaloceanspaces.com/pmpai/Leonberger/file.jpg', 'context': {'client_region': 'sfo2', 'client_config': <botocore.config.Config object at 0x00000195CB20C5F8>, 'has_streaming_input': True, 'auth_type': None, 'signing': {'bucket': 'pmpai'}}}
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event request-created.s3.PutObject: calling handler <function signal_not_transferring at 0x00000195CB26D840>
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event request-created.s3.PutObject: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x00000195CB20C438>>
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event choose-signer.s3.PutObject: calling handler <function set_operation_specific_signer at 0x00000195ACC6B7B8>
+2020-09-05 12:09:15,873 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event before-sign.s3.PutObject: calling handler <bound method S3EndpointSetter.set_endpoint of <botocore.utils.S3EndpointSetter object at 0x00000195CB2D9B70>>
+2020-09-05 12:09:15,873 DEBUG botocore.utils ThreadPoolExecutor-0_0 : Using S3 path style addressing.
+2020-09-05 12:09:15,873 DEBUG botocore.auth ThreadPoolExecutor-0_0 : Calculating signature using v4 auth.
+2020-09-05 12:09:15,873 DEBUG botocore.auth ThreadPoolExecutor-0_0 : CanonicalRequest:
+PUT
+/pmpai/Leonberger/file.jpg
+
+content-md5:60i3OksfyQyL307rICVE0Q==
+host:pmpai.sfo2.digitaloceanspaces.com
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20200905T070915Z
+
+content-md5;host;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD
+2020-09-05 12:09:15,888 DEBUG botocore.auth ThreadPoolExecutor-0_0 : StringToSign:
+AWS4-HMAC-SHA256
+20200905T070915Z
+20200905/sfo2/s3/aws4_request
+f3a5869435027e3adab4ec0d40ecebd6083cb2fdaa4647c1b3b4bd51e82dddc3
+2020-09-05 12:09:15,904 DEBUG botocore.auth ThreadPoolExecutor-0_0 : Signature:
+25aa52270195101e1f3e788198d595ce7912677d023d64416c071c69e6ad5acf
+2020-09-05 12:09:15,920 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event request-created.s3.PutObject: calling handler <function signal_transferring at 0x00000195CB26D950>
+2020-09-05 12:09:15,920 DEBUG botocore.endpoint ThreadPoolExecutor-0_0 : Sending http request: <AWSPreparedRequest stream_output=False, method=PUT, url=https://pmpai.sfo2.digitaloceanspaces.com/pmpai/Leonberger/file.jpg, headers={'User-Agent': b'Boto3/1.14.54 Python/3.7.3 Windows/10 Botocore/1.17.54', 'Content-MD5': b'60i3OksfyQyL307rICVE0Q==', 'Expect': b'100-continue', 'X-Amz-Date': b'20200905T070915Z', 'X-Amz-Content-SHA256': b'UNSIGNED-PAYLOAD', 'Authorization': b'AWS4-HMAC-SHA256 Credential=DMMTHE4OUKZ2XUYKHHIK/20200905/sfo2/s3/aws4_request, SignedHeaders=content-md5;host;x-amz-content-sha256;x-amz-date, Signature=25aa52270195101e1f3e788198d595ce7912677d023d64416c071c69e6ad5acf', 'Content-Length': '21675'}>
+2020-09-05 12:09:15,920 DEBUG urllib3.connectionpool ThreadPoolExecutor-0_0 : Starting new HTTPS connection (1): pmpai.sfo2.digitaloceanspaces.com:443
+2020-09-05 12:09:18,938 DEBUG botocore.awsrequest ThreadPoolExecutor-0_0 : Waiting for 100 Continue response.
+2020-09-05 12:09:19,579 DEBUG botocore.awsrequest ThreadPoolExecutor-0_0 : 100 Continue response seen, now sending request body.
+2020-09-05 12:09:21,785 DEBUG urllib3.connectionpool ThreadPoolExecutor-0_0 : https://pmpai.sfo2.digitaloceanspaces.com:443 "PUT /pmpai/Leonberger/file.jpg HTTP/1.1" 200 0
+2020-09-05 12:09:21,800 DEBUG botocore.parsers ThreadPoolExecutor-0_0 : Response headers: {'Content-Length': '0', 'ETag': '"eb48b73a4b1fc90c8bdf4eeb202544d1"', 'Accept-Ranges': 'bytes', 'x-amz-request-id': 'tx00000000000010884576f-005f53399e-95f8c6-sfo2a', 'Date': 'Sat, 05 Sep 2020 07:09:20 GMT', 'Strict-Transport-Security': 'max-age=15552000; includeSubDomains; preload'}
+2020-09-05 12:09:21,800 DEBUG botocore.parsers ThreadPoolExecutor-0_0 : Response body:
+b''
+2020-09-05 12:09:21,800 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event needs-retry.s3.PutObject: calling handler <botocore.retryhandler.RetryHandler object at 0x00000195CB2D97B8>
+2020-09-05 12:09:21,800 DEBUG botocore.retryhandler ThreadPoolExecutor-0_0 : No retry needed.
+2020-09-05 12:09:21,800 DEBUG botocore.hooks ThreadPoolExecutor-0_0 : Event needs-retry.s3.PutObject: calling handler <bound method S3RegionRedirector.redirect_from_error of <botocore.utils.S3RegionRedirector object at 0x00000195CB2D94A8>>
+2020-09-05 12:09:21,800 DEBUG s3transfer.utils ThreadPoolExecutor-0_0 : Releasing acquire 0/None
+2020-09-14 13:29:40,295 DEBUG urllib3.connectionpool MainThread : Starting new HTTPS connection (1): sandy.petmypal.biz:443
+2020-09-14 13:30:02,152 DEBUG urllib3.connectionpool MainThread : https://sandy.petmypal.biz:443 "POST /api/get-lost-pets HTTP/1.1" 200 None
+2020-09-14 13:32:27,803 DEBUG urllib3.connectionpool MainThread : Starting new HTTPS connection (1): sandy.petmypal.biz:443
+2020-09-14 13:32:31,104 DEBUG urllib3.connectionpool MainThread : https://sandy.petmypal.biz:443 "POST /api/get-lost-pets HTTP/1.1" 200 None
+2020-09-14 14:24:03,865 DEBUG urllib3.connectionpool MainThread : Starting new HTTPS connection (1): sandy.petmypal.biz:443
+2020-09-14 14:24:07,621 DEBUG urllib3.connectionpool MainThread : https://sandy.petmypal.biz:443 "POST /api/get-lost-pets HTTP/1.1" 200 None
