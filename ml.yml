@@ -1,0 +1,37 @@
+name: ml
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.6.10
+  - numpy=1.18.1
+  - pandas=1.0.3
+  - scipy=1.4.1
+  - tensorflow
+  - flask-restful
+  - flask-cors
+  - opencv
+  - ipykernel
+  - matplotlib
+  - pillow
+  - scikit-learn
+  - speechrecognition
+  - pydub
+  - keras
+  - tqdm
+  - xlrd==1.2.0
+  - openpyxl
+  - nltk
+  - imutils
+  - dlib
+  - statsmodels
+  - networkx
+  - imageio
+  - seaborn
+  - jsonpickle
+  - flask-sqlalchemy
+  - sqlalchemy-utils
+  - requests-toolbelt
+  - validators
+  - boto3
+prefix: /home/mahad/anaconda3/envs/ml
